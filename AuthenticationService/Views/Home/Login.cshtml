@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Login Page";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="container">
+    <form class="form" id="login">
+        <h1>Login</h1>
+        <div class="form__message form__message--error"></div>
+        <div>
+            <input type="text" id="loginUserName" autofocus placeholder="Username or email">
+        </div>
+        <div>
+            <input type="password" id="loginPassword" autofocus placeholder="Password">
+        </div>
+        <button type="submit">Continue</button>
+        <p>
+            <a href="./" id="linkRequestPassword">Forgot your password?</a>
+        </p>
+        <p>
+            <a href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+        </p>
+    </form>
+    <form id="createAccount" class="form--hidden">
+        <h1>Create Account</h1>
+        <div class="form__message form__message--error"></div>
+        <div>
+            <input type="text" id="signupUserName" autofocus placeholder="UserName">
+        </div>
+        <div>
+            <input type="text" id="signupEmail" autofocus placeholder="Email Address">
+        </div>
+        <div>
+            <input type="password" id="signupPassword" autofocus placeholder="Password">
+        </div>
+        <div>
+            <input type="password" id="signupConfirmPassword" autofocus placeholder="Confirm password">
+        </div>
+        <button type="submit">Continue</button>
+        <p>
+            <a href="./" id="linkLogin">Already have an account? Sign in</a>
+        </p>
+    </form>
+    <form id="requestPassword" class="form--hidden">
+        <h1>Request password</h1>
+        <div class="form__message form__message--error"></div>
+        <div>
+            <input type="text" id="requestPasswordEmail" autofocus placeholder="Email Address">
+        </div>
+        <button type="submit">Continue</button>
+        <p>
+            <a href="./" id="linkLogin" >Back to login page</a>
+        </p>
+    </form>
+</div>
+<script src="./Scripts/site.js"></script>
