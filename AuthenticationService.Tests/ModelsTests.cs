@@ -18,7 +18,8 @@ namespace AuthenticationService.Tests
         {
             var loginInfo = new LoginInfo("some@email.com");
             var expectedLifetime = DateTime.Now.AddHours(1);
-            Assert.AreEqual(expectedLifetime, loginInfo.TokenLife);
+            // comparing with epsilon
+            Assert.AreEqual(0, (expectedLifetime - loginInfo.TokenLife).TotalMilliseconds);
         }
 
         [Test]
