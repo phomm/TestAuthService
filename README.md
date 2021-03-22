@@ -1,4 +1,7 @@
 # TestAuthService
+
+Try it (deployed to Azure) - http://testauthservice.azurewebsites.net/Home/Login
+
 GreenTube test task - implement an ASP.Net Core Auth service with password recovery and simple JS frontend
 
 https://recruiting.novomatic.com/ website with jobs
