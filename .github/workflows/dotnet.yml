@@ -17,6 +17,8 @@ jobs:
     # dotnet build and publish
     - name: Build with dotnet
       run: dotnet build --configuration Release
+    - name: Test with dotnet
+      run: dotnet test --logger trx --collect "Code Coverage"
     - name: dotnet publish
       run: |
         dotnet publish -c Release -o dotnetcorewebapp 
