@@ -1,0 +1,5 @@
+.vs/
+AuthenticationService/obj/
+AuthenticationService/bin/
+AuthenticationService.Tests/obj/
+AuthenticationService.Tests/bin/
